@@ -11,7 +11,7 @@ import { CartService } from '../cart.service';
 
 export class ProductDetailsComponent implements OnInit {
   
-   product: Product;
+   product: Product|undefined;
 
   constructor( 
     private route: ActivatedRoute,
