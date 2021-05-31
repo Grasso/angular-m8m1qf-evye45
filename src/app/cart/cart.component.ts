@@ -10,13 +10,20 @@ export class CartComponent {
 
   items = this.cartService.getItems();
 
-  get total():number{
-    var t:number=0;
+  get total(){
+    var t=0;
     this.items.forEach(function(value){
         t+=value.price;
     });
     return t;
-    
+  }
+
+    get numItems(){
+    var t=0;
+    this.items.forEach(function(value){
+        t+=1;
+    });
+    return t;
   }
 
   constructor(private cartService: CartService) {
