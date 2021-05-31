@@ -5,7 +5,11 @@
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description}}</p>
 </div>
+<p class='link'>
+  <button (click)='addToCart(product)'>Buy</button>
+</p>
 
+<hr/>
 <p class='link'>
   <a [routerLink]="['/']">Voltar</a>
 </p>
