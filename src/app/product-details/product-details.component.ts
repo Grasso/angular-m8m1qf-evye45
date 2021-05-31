@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Product, products} from '../products';
 import { CartService } from '../cart.service';
 
+
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -13,6 +14,7 @@ export class ProductDetailsComponent implements OnInit {
   
    product: Product|undefined;
 
+  
   constructor( 
     private route: ActivatedRoute,
     private cartService: CartService,
@@ -33,6 +35,9 @@ export class ProductDetailsComponent implements OnInit {
       this.router.navigate(['/cart']);
       //window.alert('Your preduct has been added to the cart');
     }
+     onNotify() {
+    window.alert('You will be notified when the product goes on sale');
+  }
 
 }
 
