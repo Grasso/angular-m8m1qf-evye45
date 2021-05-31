@@ -30,7 +30,7 @@ export class ProductDetailsComponent implements OnInit {
   }
    addToCart(product: Product){
       this.cartService.addToCard(product);
-      this.router.navigateByUrl('./cart');
+      this.router.navigate(['/cart']);
       //window.alert('Your preduct has been added to the cart');
     }
 
