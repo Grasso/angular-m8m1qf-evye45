@@ -1,5 +1,23 @@
+h2{
+  margin-bottom:40px
+}
 
+h3{
+  margin-bottom:0;
+}
 
+p{
+  margin-top:0;
+}
+
+div.btn-container{
+  margin-bottom:40px;
+}
+
+.btn-inline{
+  display:inline;
+  margin-right:10px;
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

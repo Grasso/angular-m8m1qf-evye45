@@ -8,17 +8,14 @@
     </a>
   </h3>
 
-   <p *ngIf="product.description">
+  <p *ngIf="product.description">
     Description: {{ product.description }}
   </p>
 
-   <button (click)="share()">
-    Share
-  </button>
+  <div class="btn-container">
+    <button (click)="share()" class='btn-inline' >Share</button>
 
- <app-product-alerts
-   [product]="product" 
-   (notify)="onNotify()">
- </app-product-alerts>
-
+    <app-product-alerts [product]="product" (notify)="onNotify()">
+    </app-product-alerts>
+  </div>
 </div>
